@@ -1,2 +1,0 @@
-pdsh ( Parallel Distributed Shell ) - high-performance, multithreaded command-line utility for linux that enables sysadmins to execute the same command on multiple remote hosts in parallel
-
