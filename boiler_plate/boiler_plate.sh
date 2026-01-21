@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script Name: 
-# Description: Boilerplate code for creating testing and validation scripts with automated structured log file generation
+# Description: Boilerplate code for creating testing and validation scripts with automated log file generation
 # Author: Gurpreet Singh 
 
 # =================
@@ -198,7 +198,7 @@ function install_dependencies()
                 generate_log "INFO" "env_check" "Package ${PACKAGE} has been installed"
             else
                 generate_log "FAIL" "env_check" "Package ${PACKAGE} has not been installed, exiting..."
-                break
+                return 1
             fi
         else
             generate_log "INFO" "env_check" "Package $PACKAGE is installed" 
